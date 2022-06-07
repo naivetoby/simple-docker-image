@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-8-slim
+FROM maven:3-openjdk-8-slim
 
 RUN sed -i "s@http://deb.debian.org@http://mirrors.aliyun.com@g" /etc/apt/sources.list && \
     apt-get update && \
